@@ -41,7 +41,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
+                <version>Finchley.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -59,6 +59,8 @@
     </build>
   <modules>
     <module>study-demo-child</module>
-    <module>studt-demo-client</module>
-    </modules>
+    <module>study-demo-client</module>
+        <module>study-demo-getway</module>
+    <module>study-demo-feign</module>
+  </modules>
 </project>
