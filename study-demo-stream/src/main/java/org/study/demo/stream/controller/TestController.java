@@ -16,8 +16,8 @@ public class TestController {
     /**
      * 消息生产接口
      *
-     * @param message
-     * @return
+     * @param message 需要传送的消息
+     * @return ok字符串
      */
     @GetMapping("/sendMessage")
     public String messageWithMQ(@RequestParam String message) {

@@ -23,6 +23,10 @@ public class App
     {
         SpringApplication.run( App.class, args );
     }
+    /**
+     * 加RestTemplate
+     * @return 实例化RestTemplate
+     */
     @Bean
     @LoadBalanced
     RestTemplate restTemplate() {

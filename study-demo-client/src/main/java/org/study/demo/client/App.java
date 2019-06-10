@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Hello world!
+ * 启动类，在注册中心进行注册
  *
  */
 @SpringBootApplication
@@ -21,12 +21,6 @@ public class App
     {
     	SpringApplication.run( App.class, args );
     }
-//    @Value("${server.port}")
-//    String port;
-//
-//    @RequestMapping("/hi")
-//    public String home(@RequestParam(value = "name", defaultValue = "forezp") String name) {
-//        return "hi " + name + " ,i am from port:" + port;
-//    }
+
 
 }

@@ -10,7 +10,9 @@ import org.study.demo.client.controller.StudyDemoController;
 public class StudyDemoClientControllerImpl implements StudyDemoController{
     @Value("${server.port}")
     String port;
-
+    /**
+     * 输入地址返回"hi ${name} ,i am from port: ${server.port}
+     */
     @RequestMapping("/hi")
     public String home(@RequestParam(value = "name", defaultValue = "forezp") String name) {
         return "hi " + name + " ,i am from port:" + port;
